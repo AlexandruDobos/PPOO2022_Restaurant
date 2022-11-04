@@ -119,7 +119,7 @@ public class Main {
                     response = scan.nextLine();
                     try {
                         if ((int) Double.parseDouble(response) >= 1 && (int) Double.parseDouble(response) <= restaurant.GetMenuList().size() + 1) {
-                            if ((int) Double.parseDouble(response) != restaurant.GetMenuList().size() + 1) {
+                            if ((int) Double.parseDouble(response) != restaurant.getPlaceList().get(placeNumber-1).getProductList().size() + 1) {
                                 productResponse = (int) Double.parseDouble(response);
 
                                 Product userProduct = restaurant.getPlaceList().get(placeNumber - 1).getProductList().get(productResponse - 1);
